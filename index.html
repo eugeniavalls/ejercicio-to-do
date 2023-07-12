@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>To Do</title>
-</head>
-<body>
-    <input type="text" placeholder="write your task" id="text-task" class="text-task">
+  </head>
+  <body>
+    <form id="text-task">
+      <input type="text" placeholder="write your task" class="text-task" />
+    </form>
+
+    <button id="allButton">All</button>
+    <button id="uncompletedButton">Uncompleted</button>
+    <button id="completedButton">Completed</button>
 
     <div class="container-task" id="container-task">
-        <input type="checkbox" class="checkbox" id="checkbox">
-        <span class="task" id="task">Tarea de ejemplo</span>
-        <button class="button-close" id="button-close">X</button> 
+      <input type="checkbox" class="checkbox" id="checkbox" />
+      <span class="task" id="task">Tarea de ejemplo</span>
+      <button class="button-close" id="button-close">X</button>
     </div>
 
     <div class="tasks" id="tasks"></div>
     <script src="js/scripts.js"></script>
-</body>
+  </body>
 </html>
